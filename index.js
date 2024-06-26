@@ -67,6 +67,8 @@ const checkEndOfGame = () => {
     choiceButtons.forEach(choiceButton =>
       choiceButton.removeEventListener('click', playGame)
     )
+
+    showPlayAgainButton()
   }
 }
 
