@@ -49,3 +49,11 @@ button {
   margin-inline: auto;
   text-align: center;
 }
+
+/* ============ round count ============ */
+.round-count {
+  display: block;
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
