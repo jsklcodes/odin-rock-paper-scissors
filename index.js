@@ -44,6 +44,22 @@ const addClickListenerToChoiceButtons = () => {
   )
 }
 
+const checkEndOfGame = () => {
+  if (gameState.numberOfRounds === 5) {
+    if (gameState.humanScore === gameState.computerScore) {
+      resultMessageP.textContent = '🎉 The game ended in a draw!'
+    } else if (gameState.humanScore > gameState.computerScore) {
+      resultMessageP.textContent = '🎉 You won the game!'
+    } else {
+      resultMessageP.textContent = '🎉 Computer won the game!'
+    }
+
+    choiceButtons.forEach(choiceButton =>
+      choiceButton.removeEventListener('click', playGame)
+    )
+  }
+}
+
 const playRound = (humanChoice, computerChoice) => {
   const humanWonRound =
     (humanChoice === 'paper' && computerChoice === 'rock') ||
