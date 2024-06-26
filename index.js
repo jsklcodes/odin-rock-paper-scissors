@@ -4,3 +4,9 @@ const getComputerChoice = () => {
 
   return choices[randomIndex]
 }
+
+const getHumanChoice = () => {
+  let humanChoice = prompt('Rock, paper or scissors?')
+
+  return humanChoice.toLowerCase()
+}
