@@ -8,6 +8,13 @@ const computerChoiceSpan = document.querySelector('#computer-choice')
 const resultMessageP = document.querySelector('#result-message')
 const roundChoicesP = document.querySelector('#round-choices')
 
+const gameState = {
+  humanScore: 0,
+  computerScore: 0,
+  numberOfRounds: 0,
+  numberOfDraws: 0,
+}
+
 // const getComputerChoice = () => {
 //   const choices = ['rock', 'paper', 'scissors']
 //   const randomIndex = Math.floor(Math.random() * 3)
