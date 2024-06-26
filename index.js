@@ -38,6 +38,31 @@ const resetGameState = () => {
   resultMessageP.textContent = ''
 }
 
+const playRound = (humanChoice, computerChoice) => {
+  const humanWonRound =
+    (humanChoice === 'paper' && computerChoice === 'rock') ||
+    (humanChoice === 'rock' && computerChoice === 'scissors') ||
+    (humanChoice === 'scissors' && computerChoice === 'paper')
+
+  gameState.numberOfRounds++
+  roundCountSpan.textContent = gameState.numberOfRounds
+  humanChoiceSpan.textContent = humanChoice
+  computerChoiceSpan.textContent = computerChoice
+
+  if (humanChoice === computerChoice) {
+    resultMessageP.textContent = 'Draw!'
+    gameState.numberOfDraws++
+  } else if (humanWonRound) {
+    resultMessageP.textContent = 'You won the round!'
+    gameState.humanScore++
+  } else {
+    resultMessageP.textContent = 'Computer won the round!'
+    gameState.computerScore++
+  }
+
+  updateUI()
+}
+
 // const getHumanChoice = () => {
 //   let humanChoice = prompt('Rock, paper or scissors?')
 
