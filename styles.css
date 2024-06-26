@@ -70,3 +70,32 @@ button {
 .round-choices {
   margin-bottom: 1.6rem;
 }
+
+/* ============ choices ============ */
+.choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 6.4rem;
+}
+
+.choice-button {
+  flex: 1;
+  min-width: 20rem;
+}
+
+.choice-button:hover {
+  transform: scale(0.99);
+}
+
+.rock-button {
+  background-color: #d6a2e8;
+}
+
+.paper-button {
+  background-color: #55e6c1;
+}
+
+.scissors-button {
+  background-color: #fea47f;
+}
