@@ -83,6 +83,7 @@ const playRound = (humanChoice, computerChoice) => {
   }
 
   updateUI()
+  checkEndOfGame()
 }
 
 const playGame = event => {
