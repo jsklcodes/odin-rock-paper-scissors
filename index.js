@@ -38,6 +38,12 @@ const resetGameState = () => {
   resultMessageP.textContent = ''
 }
 
+const addClickListenerToChoiceButtons = () => {
+  choiceButtons.forEach(choiceButton =>
+    choiceButton.addEventListener('click', playGame)
+  )
+}
+
 const playRound = (humanChoice, computerChoice) => {
   const humanWonRound =
     (humanChoice === 'paper' && computerChoice === 'rock') ||
