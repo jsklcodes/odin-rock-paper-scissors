@@ -29,6 +29,15 @@ const updateUI = () => {
   drawCountSpan.textContent = gameState.numberOfDraws
 }
 
+const resetGameState = () => {
+  gameState.humanScore = 0
+  gameState.computerScore = 0
+  gameState.numberOfRounds = 0
+  gameState.numberOfDraws = 0
+
+  resultMessageP.textContent = ''
+}
+
 // const getHumanChoice = () => {
 //   let humanChoice = prompt('Rock, paper or scissors?')
 
