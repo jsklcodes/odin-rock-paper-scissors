@@ -42,3 +42,10 @@ button {
 .bold {
   font-weight: 600;
 }
+
+/* ============ game container ============ */
+.game-container {
+  width: min(90%, 64rem);
+  margin-inline: auto;
+  text-align: center;
+}
