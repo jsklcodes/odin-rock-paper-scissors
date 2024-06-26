@@ -99,3 +99,9 @@ button {
 .scissors-button {
   background-color: #fea47f;
 }
+
+/* ============ result message ============ */
+.result-message {
+  font-size: 2.4rem;
+  margin-bottom: 6.4rem;
+}
