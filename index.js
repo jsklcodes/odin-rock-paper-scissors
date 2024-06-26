@@ -78,6 +78,8 @@ const playGame = event => {
   roundChoicesP.style.display = 'block'
 }
 
+document.addEventListener('DOMContentLoaded', addClickListenerToChoiceButtons)
+
 // const getHumanChoice = () => {
 //   let humanChoice = prompt('Rock, paper or scissors?')
 
