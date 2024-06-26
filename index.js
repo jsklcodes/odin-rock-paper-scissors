@@ -38,6 +38,16 @@ const resetGameState = () => {
   resultMessageP.textContent = ''
 }
 
+const showPlayAgainButton = () => {
+  if (!document.querySelector('#play-again-button')) {
+    const playAgainButton = `<button class="play-again-button" id="play-again-button">Play again</button>`
+    resultMessageP.insertAdjacentHTML('afterend', playAgainButton)
+    document
+      .querySelector('#play-again-button')
+      .addEventListener('click', handlePlayAgain)
+  }
+}
+
 const addClickListenerToChoiceButtons = () => {
   choiceButtons.forEach(choiceButton =>
     choiceButton.addEventListener('click', playGame)
