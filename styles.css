@@ -68,6 +68,7 @@ button {
 
 /* ============ round choices ============ */
 .round-choices {
+  display: none;
   margin-bottom: 1.6rem;
 }
 
