@@ -21,6 +21,14 @@ const getComputerChoice = () => {
   return choices[randomIndex]
 }
 
+const updateUI = () => {
+  roundChoicesP.style.display = 'none'
+  roundCountSpan.textContent = gameState.numberOfRounds
+  humanScoreSpan.textContent = gameState.humanScore
+  computerScoreSpan.textContent = gameState.computerScore
+  drawCountSpan.textContent = gameState.numberOfDraws
+}
+
 // const getHumanChoice = () => {
 //   let humanChoice = prompt('Rock, paper or scissors?')
 
