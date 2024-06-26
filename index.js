@@ -1,3 +1,13 @@
+const choiceButtons = document.querySelectorAll('[data-choice]')
+const roundCountSpan = document.querySelector('#round-count')
+const humanScoreSpan = document.querySelector('#human-score')
+const computerScoreSpan = document.querySelector('#computer-score')
+const drawCountSpan = document.querySelector('#draws')
+const humanChoiceSpan = document.querySelector('#human-choice')
+const computerChoiceSpan = document.querySelector('#computer-choice')
+const resultMessageP = document.querySelector('#result-message')
+const roundChoicesP = document.querySelector('#round-choices')
+
 // const getComputerChoice = () => {
 //   const choices = ['rock', 'paper', 'scissors']
 //   const randomIndex = Math.floor(Math.random() * 3)
