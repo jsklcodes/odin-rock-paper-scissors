@@ -63,6 +63,15 @@ const playRound = (humanChoice, computerChoice) => {
   updateUI()
 }
 
+const playGame = event => {
+  const humanChoice = event.target.dataset.choice
+  const computerChoice = getComputerChoice()
+
+  playRound(humanChoice, computerChoice)
+
+  roundChoicesP.style.display = 'block'
+}
+
 // const getHumanChoice = () => {
 //   let humanChoice = prompt('Rock, paper or scissors?')
 
