@@ -1,0 +1,44 @@
+:root {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
+  font-size: 1.6rem;
+
+  background-color: #151318;
+  color: #f5f5f5;
+}
+
+button {
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.8rem 1.2rem;
+  font: inherit;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #151318;
+}
+
+.bold {
+  font-weight: 600;
+}
