@@ -72,6 +72,15 @@ const checkEndOfGame = () => {
   }
 }
 
+const handlePlayAgain = () => {
+  resetGameState()
+  updateUI()
+  addClickListenerToChoiceButtons()
+
+  const playAgainButton = document.querySelector('#play-again-button')
+  if (playAgainButton) playAgainButton.remove()
+}
+
 const playRound = (humanChoice, computerChoice) => {
   const humanWonRound =
     (humanChoice === 'paper' && computerChoice === 'rock') ||
